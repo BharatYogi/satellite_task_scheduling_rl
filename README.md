@@ -87,3 +87,10 @@ The system generates:
 
 ```bash
 python satellite_fyp_prototype.py
+
+## Author
+
+Bharat Nath Yogi  
+BSc (Hons) Computer Science (Artificial Intelligence)  
+University of Greenwich  
+Final Year Project (2026)
