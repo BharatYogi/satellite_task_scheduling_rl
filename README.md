@@ -93,7 +93,7 @@ Run the following command:
 ```bash
 python satellite_fyp_prototype.py
 
-## Author
+## **Author**
 Bharat Nath Yogi  
 BSc (Hons) Computer Science (Artificial Intelligence)  
-University of Greenwich
+University of Greenwich  
