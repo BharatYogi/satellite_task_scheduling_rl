@@ -7,71 +7,67 @@ The project compares traditional heuristic scheduling methods with a reinforceme
 
 
 ## Problem Statement
-Satellites are required to perform multiple observation tasks, but due to limited onboard resources and strict time constraints, it is not possible to execute all tasks.
+Satellites must perform multiple observation tasks, but due to limited onboard resources and strict time constraints, not all tasks can be executed.
 
 The challenge is to determine:
-- Which tasks should be selected
-- In what order they should be executed
-- While maximising overall mission value and respecting constraints
+- Which tasks should be selected  
+- In what order they should be executed  
+- While maximising mission value under constraints  
 
 
 ## Objectives
-- Simulate a realistic satellite scheduling environment  
+- Simulate a satellite scheduling environment  
 - Implement multiple scheduling algorithms  
-- Compare heuristic approaches with reinforcement learning  
-- Evaluate performance using quantitative metrics  
+- Compare heuristic methods with reinforcement learning  
+- Evaluate performance using defined metrics  
 
 
 ## System Components
 
-### 1. Task Generator
-Generates a synthetic dataset of satellite tasks with attributes such as:
-- Time window (start and end)
-- Duration
-- Priority
-- Energy consumption
-- Storage requirement
-- Reward value
+### Task Generator
+Generates a synthetic dataset with:
+- Time windows  
+- Priority levels  
+- Energy consumption  
+- Storage requirements  
 
 
-### 2. Simulation Environment
-Models satellite constraints including:
-- Limited battery capacity
-- Limited storage capacity
-- Task feasibility based on time windows
-- Resource consumption over time
+### Simulation Environment
+Models constraints such as:
+- Battery limits  
+- Storage limits  
+- Task feasibility  
 
 
-### 3. Scheduling Algorithms
+### Scheduling Algorithms
 
 #### Heuristic Methods
-- First-Come-First-Served (FCFS)
-- Highest Priority First
-- Earliest Deadline First (EDF)
-- Greedy Score-based Scheduler
+- First-Come-First-Served (FCFS)  
+- Highest Priority First  
+- Earliest Deadline First (EDF)  
+- Greedy Score-based Scheduler  
 
 #### Reinforcement Learning
-- Deep Q-Network (DQN)
-- Learns task selection strategy through interaction with the environment
+- Deep Q-Network (DQN)  
 
 
-### 4. Evaluation System
-The system evaluates each scheduling approach using:
-- Task completion ratio
-- Total priority reward
-- Constraint violations
-- Battery utilisation
-- Storage utilisation
+### Evaluation
+Performance is measured using:
+- Task completion ratio  
+- Total priority reward  
+- Constraint violations  
+- Battery utilisation  
+- Storage utilisation  
 
 
 ## Results
-The system generates the following outputs:
+The system generates:
 
-- `reward_curve.png` – training performance of DQN  
-- `scheduler_comparison_reward.png` – reward comparison across methods  
-- `completion_rate_comparison.png` – task completion comparison  
-- `sample_schedule_timeline.png` – example scheduling timeline  
-- `synthetic_tasks.csv` – generated dataset  
+- reward_curve.png  
+- scheduler_comparison_reward.png  
+- completion_rate_comparison.png  
+- sample_schedule_timeline.png  
+- synthetic_tasks.csv  
 
 
 ## Key Findings
@@ -86,14 +82,8 @@ The system generates the following outputs:
 - Matplotlib  
 - Reinforcement Learning (DQN)  
 
-## How to Run
 
-Run the following command:
+## How to Run
 
 ```bash
 python satellite_fyp_prototype.py
-
-## **Author**
-Bharat Nath Yogi  
-BSc (Hons) Computer Science (Artificial Intelligence)  
-University of Greenwich  
